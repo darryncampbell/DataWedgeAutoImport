@@ -80,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
                         outputFileName = outputFileName.substring(0, outputFileName.length() - 4);
                         File fileToImport = new File(outputFileName);
                         outputFile.renameTo(fileToImport);
+                        //set permission to the file to read, write and exec.
+                        fileToImport.setExecutable(true, false);
+                        fileToImport.setReadable(true, false);
+                        fileToImport.setWritable(true, false);
                         output("File(s) copied to DW autoimport directory");
 
                     } catch (FileNotFoundException e) {
