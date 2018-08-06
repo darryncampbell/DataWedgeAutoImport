@@ -24,9 +24,6 @@ import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    //  todo provide instructions (push to staging directory before import)
-    //  todo - PUT ON HOLD BECAUSE AUTOIMPORT DOES NOT SEEM TO WORK VIA APP UNLESS YOU DO A DEVICE REBOOT
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
